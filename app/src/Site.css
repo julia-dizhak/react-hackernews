@@ -1,0 +1,16 @@
+.container {
+    width: 980px;
+    margin: auto;
+}
+
+.jumbotron {
+
+}
+
+.jumbotron .buttons {
+    margin: 15px 0 0 0;
+}
+
+.jumbotron .buttons button {
+    margin: 0 15px 0 0;
+}
