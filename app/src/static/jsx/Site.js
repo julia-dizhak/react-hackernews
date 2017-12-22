@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import createReactClass from 'create-react-class';
-//var createReactClass = require('cretate-react-class');
+import createReactClass from 'create-react-class'; // let createReactClass = require('create-react-class');
 
-import './../Site.css'
+import '../css/Site.css'
 import Jumbotron from './Jumbotron';
+import Greeting from './Greeting';
 
-let Site = createReactClass({
+let App = createReactClass({
     getInitialState: function() {
         return {
             page: 0,
@@ -23,10 +23,11 @@ let Site = createReactClass({
     },
 
     render: function () {
-        var title = 'fake';
+        let title = 'fake';
 
         return (
             <div className='container'>
+                <Greeting />
                 <Jumbotron
                     mainText='Welcome to React'
                     subText='This is an example for jumbotron'
@@ -38,4 +39,4 @@ let Site = createReactClass({
     }
 });
 
-export default Site;
+export default App;

@@ -8,8 +8,8 @@ class Jumbotron extends Component {
     render () {
         return (
             <div className='jumbotron'>
-                <h1>{this.props.mainText}</h1>
-                <h2>{this.props.subText}</h2>
+                <h2>{this.props.mainText}</h2>
+                <h3>{this.props.subText}</h3>
                 <p>{this.props.desc} - {this.props.number}</p>
                 <div>
                     <PrimaryButton

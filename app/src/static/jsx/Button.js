@@ -18,6 +18,14 @@ const styles = StyleSheet.create({
         color: '#fff',
         outline: 0,
         padding: 10,
+
+        ':active': {
+            boxShadow: '2px 2px 2px 1px rgba(0,0,0,0.2)'
+        },
+
+        ':hover': {
+            backgroundColor: '#1cb841'
+        }
     }
 });
 
