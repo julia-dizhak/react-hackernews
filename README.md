@@ -6,7 +6,7 @@ demo is ...
 
 ## Tags
 * v1.0 - initial setup by create-react-app
-* v1.1 - create an simple component
+* v1.1 - create a simple component
 * v1.2 - render a list of items (sample data)
 * v1.3 - fecth the data from external API
 
