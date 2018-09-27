@@ -1,8 +1,8 @@
-# Render posts from [HackerNews API](https://hn.algolia.com/api/v1/search?query=redux)
+# Render posts by using [HackerNews API](https://hn.algolia.com/api/v1/search?query=redux)
 
 api is [HackerNews API](https://github.com/HackerNews/API)
 
-demo is
+demo is ... 
 
 ## Tags
 * v1.0 - initial setup by create-react-app
@@ -12,7 +12,7 @@ demo is
 
 How to use tags
 ```
-$ git reset --hard v1.0
+$ git reset --hard v1.?
 ```
 
 ### Assignament
