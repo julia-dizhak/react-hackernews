@@ -5,7 +5,7 @@ class App extends Component {
         const name = 'Julia Dizhak';
         
         return (
-            <div className="message">
+            <div className="app">
                 <h1>
                     Welcome to React &nbsp;
                     <span>{name}</span>
