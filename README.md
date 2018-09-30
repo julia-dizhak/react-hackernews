@@ -1,6 +1,6 @@
 # Render posts by using [HackerNews API](https://hn.algolia.com/api/v1/search?query=redux)
 
-api is [HackerNews API](https://github.com/HackerNews/API)
+API is [HackerNews API](https://github.com/HackerNews/API)
 
 demo is ... 
 

@@ -1,0 +1,69 @@
+:root {
+    --default-color: #222;
+    --primary-color: tomato;
+    --secondary-color: dodgerblue;
+    --accent-color: mediumslateblue;
+}
+
+body {
+    margin: 0;
+    padding: 15px 0;
+    color: var(--default-color);
+    background: #f4f4f4;
+    font: 400 16px Arial,sans-serif;
+}
+
+a { 
+    color: var(--default-color);
+}
+a:hover { 
+    text-decoration: underline;
+}
+*:focus { 
+    outline: none;
+}
+
+ul, li { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.posts-list {
+    width: 90%;
+    background: #fff;
+    margin: 30px auto;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    display: flex;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 0 10px; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.posts {
+    width: 32%;
+    box-sizing: border-box;
+    line-height: 24px;
+    white-space: nowrap; 
+    margin: 10px;
+    padding: 10px 15px; 
+}
+
+.posts .title-link {
+    width: 80%;
+    padding: 0 40px 5px 0; 
+    display: inline-block;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.posts .title-link:hover {
+    color: var(--default-color);
+}
