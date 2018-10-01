@@ -2,7 +2,18 @@
 
 API is [HackerNews API](https://github.com/HackerNews/API)
 
-demo is ... 
+[demo](https://julia-dizhak.github.io/react-blog-posts/posts/demo/) with full finctionality 
+
+The repo will give you a basic understanding of ReactJS through building a very simple app.
+
+## Setup
+* clone repo
+* git reset --hard v1.0 
+* cd hackernews-app
+* activate a node version (nvm use v8.12.0)
+* yarn install 
+* yarn start
+* and browser open by default to http://localhost:3000
 
 ## Tags
 * v1.0 - initial setup by create-react-app
