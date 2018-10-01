@@ -26,7 +26,9 @@ How to use tags
 $ git reset --hard v1.?
 ```
 
-### Assignament
+### Assignaments
+
+#### Assignament 1
 * create 2 components: UserInput and UserOutput
 * UserInput should hold an input element, UserOutput two paragraphs
 * output multiple UserOutput components in the App component (any paragraph texts of your choice)
@@ -37,3 +39,6 @@ $ git reset --hard v1.?
 * ensure that the new input entered by the user overwrites the old username passed to UserOutput
 * add two-way-binding to your input (in UserInput) to also display the starting username
 * add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets
+
+#### Assignament 2
+* validate props for your custom component
