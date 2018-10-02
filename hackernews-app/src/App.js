@@ -1,33 +1,36 @@
 import React, {Component} from 'react';
+import Button from './Button';
+import FlipMove from 'react-flip-move';
 
-const staticList = [
-    {
-        title: 'React',
-        url: 'https://facebook.github.io/react/',
-        author: 'Jordan Walke',
-        num_comments: 3,
-        points: 4,
-        objectID: 0,
-    }, 
-    {
-        title: 'Redux',
-        url: 'https://github.com/reactjs/redux',
-        author: 'Dan Abramov, Andrew Clark',
-        num_comments: 2,
-        points: 5,
-        objectID: 1
-    }
-];
+const PATH_BASE = 'https://hn.algolia.com/api/v1';
+const PATH_SEARCH = '/search';
+
+const url = `${PATH_BASE}${PATH_SEARCH}`;
 
 export default class App extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-          list: staticList
+            list: []
         };
 
         this.handleDelete = this.handleDelete.bind(this);
+    }
+
+    displayStories(result) {
+        this.setState({list: result});
+    }
+
+    componentDidMount() {
+        fetch(url)
+        .then(
+              response => response.json()
+        )
+          .then(
+              data => this.displayStories(data.hits)
+        )
+        .catch(error => error);
     }
 
     handleDelete(id) {
@@ -45,6 +48,7 @@ export default class App extends Component {
 
         return (
             <ul className="posts-list">
+                <FlipMove>
                 {
                     list.map(item => {
                         return (
@@ -58,16 +62,17 @@ export default class App extends Component {
                                 <span>{item.num_comments}</span>
                                 <span>{item.points}</span>
                                 <span>
-                                    <button
+                                    <Button
                                         onClick={() => this.handleDelete(item.objectID)}
                                         type="button"> 
                                         Delete
-                                    </button>
+                                    </Button>
                                 </span>
                             </article>  
                         );
                     })
-                }         
+                }
+                </FlipMove>         
             </ul>
             
         )
